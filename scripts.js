@@ -40,6 +40,9 @@ ConnectConfig = function()
         var response = xhr.responseText;
         var resources = JSON.parse(response);
 
+        document.title = resources.label;
+
+        document.getElementById("footer_block").innerText = resources.author;
         alert(resources.label);
       }
 }
