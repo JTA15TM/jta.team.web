@@ -24,4 +24,20 @@ onload = function()
         content_height = ((width / 2) + (width / 12)) + "px";
     }
     document.getElementsByClassName("content")[0].style.height = content_height;
+
+    ConnectConfig();
+}
+
+ConnectConfig = function()
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'config.json', false);
+    xhr.send();
+
+    if (xhr.status != 200) {
+        //error
+      } else {
+        var response = xhr.responseText;
+        alert(response);
+      }
 }
