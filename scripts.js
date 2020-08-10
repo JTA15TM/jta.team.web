@@ -62,6 +62,5 @@ ConnectPagesConfig = function()
         {
             alert(item.label);
         }
-      }
     }
 }
