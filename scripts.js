@@ -38,8 +38,8 @@ ConnectConfig = function()
         //error
       } else {
         var response = xhr.responseText;
-        //var resources = JSON.parse(response);
+        var resources = JSON.parse(response);
 
-        alert(response);
+        alert(response.label);
       }
 }
