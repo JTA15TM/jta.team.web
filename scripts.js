@@ -39,6 +39,8 @@ ConnectConfig = function()
       } else {
         var response = xhr.responseText;
         let json = JSON.parse(response, configObject);
+
+        alert(json.label);
       }
 }
 
