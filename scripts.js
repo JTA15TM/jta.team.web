@@ -60,7 +60,7 @@ ConnectPagesConfig = function()
         var resources = JSON.parse(response);
         for(var item in resources.items)
         {
-            alert(item.label);
+            alert(item);
         }
     }
 }
