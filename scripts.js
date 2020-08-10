@@ -38,14 +38,8 @@ ConnectConfig = function()
         //error
       } else {
         var response = xhr.responseText;
-        let json = JSON.parse(response, configObject);
+        var resources = JSON.parse(response);
 
-        alert(json.label);
+        alert(resources.label);
       }
 }
-
-let configObject = {
-    label: '',
-    date_update: "",
-    author: ""
-  };
