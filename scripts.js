@@ -40,6 +40,6 @@ ConnectConfig = function()
         var response = xhr.responseText;
         var resources = JSON.parse(response);
 
-        alert(response.label);
+        alert(resources.label);
       }
 }
