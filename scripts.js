@@ -55,14 +55,23 @@ ConnectPagesConfig = function()
 
     if (xhr.status != 200) {
         //error
+        document.getElementById("toolbar_menu_items").innerHTML = "Error";
       } else {
         var response = xhr.responseText;
 
+        var output_items = "";
         var jsonData = JSON.parse(response);
         for (var i = 0; i < jsonData.items.length; i++) 
         {
           var a = jsonData.items[i];
-          alert(a.label);
+
+          var label = a.label;
+          var redirect = a.redirect;
+
+          var menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + i + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
+          output_items += menuItem;
         }
+
+        document.getElementById("toolbar_menu_items").innerHTML = output_items;
     }
 }
