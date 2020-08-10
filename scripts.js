@@ -45,3 +45,22 @@ ConnectConfig = function()
         document.getElementById("footer_block").innerHTML = resources.author;
       }
 }
+
+ConnectPagesConfig = function()
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'pages_config.json', false);
+    xhr.send();
+
+    if (xhr.status != 200) {
+        //error
+      } else {
+        var response = xhr.responseText;
+        var resources = JSON.parse(response);
+        for(var item in resources.items)
+        {
+            alert(item.label);
+        }
+      }
+    }
+}

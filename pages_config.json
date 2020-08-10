@@ -1,0 +1,16 @@
+{
+    "items":[
+        {
+            "label":"Главная",
+            "redirect":"index.html"
+        },
+        {
+            "label":"Приложения",
+            "redirect":"/pages/apps.html"
+        },
+        {
+            "label":"О команде",
+            "redirect":"/pages/about_team.html"
+        }
+    ]
+}
