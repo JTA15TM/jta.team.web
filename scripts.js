@@ -26,6 +26,7 @@ onload = function()
     document.getElementsByClassName("content")[0].style.height = content_height;
 
     ConnectConfig();
+    ConnectPagesConfig();
 }
 
 ConnectConfig = function()
