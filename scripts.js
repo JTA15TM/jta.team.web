@@ -42,7 +42,6 @@ ConnectConfig = function()
 
         document.title = resources.label;
 
-        document.getElementById("footer_block").innerText = resources.author;
-        alert(resources.label);
+        document.getElementById("footer_block").innerHTML = resources.author;
       }
 }
