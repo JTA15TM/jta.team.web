@@ -64,12 +64,5 @@ ConnectPagesConfig = function()
           var a = jsonData.items[i];
           alert(a.label);
         }
-
-        var resources = JSON.parse(response);
-        for(var item in resources.items)
-        {
-            var res = JSON.parse(item);
-            alert(res.label);
-        }
     }
 }
