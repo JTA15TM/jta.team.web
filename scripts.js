@@ -31,7 +31,7 @@ onload = function()
 ConnectConfig = function()
 {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/config.json', false);
+    xhr.open('GET', 'config.json', false);
     xhr.send();
 
     if (xhr.status != 200) {
