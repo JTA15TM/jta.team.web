@@ -57,6 +57,14 @@ ConnectPagesConfig = function()
         //error
       } else {
         var response = xhr.responseText;
+
+        var jsonData = JSON.parse(response);
+        for (var i = 0; i < jsonData.items.length; i++) 
+        {
+          var a = jsonData.items[i];
+          alert(a.label);
+        }
+
         var resources = JSON.parse(response);
         for(var item in resources.items)
         {
