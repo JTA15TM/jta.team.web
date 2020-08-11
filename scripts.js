@@ -1,5 +1,13 @@
 onMenuClick = function(value)
 {
+    var a = window.location.href;
+    if(a.contains("index.html"))
+    {
+      alert("contain");
+    }
+    else alert("no contain");
+    alert(a);
+
     var redirect = document.getElementsByClassName("menu_item")[value].getAttribute("redirect");
     window.location.href = redirect;
 }
@@ -55,7 +63,6 @@ ConnectPagesConfig = function()
 
     if (xhr.status != 200) {
         //error
-        document.getElementById("toolbar_menu_items").innerHTML = "Error";
       } else {
         var response = xhr.responseText;
 
@@ -67,6 +74,8 @@ ConnectPagesConfig = function()
 
           var label = a.label;
           var redirect = a.redirect;
+
+
 
           var menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + i + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
           output_items += menuItem;
