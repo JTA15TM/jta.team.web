@@ -29,7 +29,7 @@ onload = function()
     {
         content_height = ((width / 2) + (width / 12)) + "px";
     }
-    document.getElementsByClassName("content")[0].style.height = content_height;
+    //document.getElementsByClassName("content")[0].style.height = content_height;
 
     ConnectConfig();
     ConnectPagesConfig();
@@ -49,7 +49,7 @@ ConnectConfig = function()
 
         document.title = resources.label;
 
-        document.getElementById("footer_block").innerHTML = resources.author;
+        document.getElementById("toolbar_title").innerHTML = resources.author;
       }
 }
 
