@@ -9,7 +9,7 @@ body
 
 @font-face {
 	font-family: "ManropeJTA";
-	src: url(/шрифты/manrope_light.ttf);
+	src: url(https://jta15.github.com/jta.team.web/шрифты/manrope_light.ttf);
   }
 
 h1 { font-family: "Kimberley", sans-serif }
