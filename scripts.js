@@ -80,7 +80,7 @@ ConnectPagesConfig = function()
           }
           else 
           {
-            menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + i + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
+            menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + (i - 1) + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
           }
           output_items += menuItem;
         }
