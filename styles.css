@@ -9,7 +9,7 @@ body
 
 @font-face {
 	font-family: "ManropeJTA";
-	src: url(/fonts/manrope_extra_light.ttf);
+	src: url(/шрифты/manrope_light.ttf);
   }
 
 h1 { font-family: "Kimberley", sans-serif }
