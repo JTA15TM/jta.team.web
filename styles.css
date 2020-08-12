@@ -1,16 +1,12 @@
 body
 {
 	opacity: 0%;
-	font-family: "ManropeJTA";
+	font-family: 'Manrope', sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #000000;
 }
 
-@font-face {
-	font-family: "ManropeJTA";
-	src: url(https://jta15.github.com/jta.team.web/шрифты/manrope_light.ttf);
-  }
 
 h1 { font-family: "Kimberley", sans-serif }
 
