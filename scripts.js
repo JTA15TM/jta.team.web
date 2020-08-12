@@ -68,8 +68,8 @@ ConnectPagesConfig = function()
           var redirect = a.redirect;
 
           var menuItem = "";
-          const a = "" + window.location.href;
-          if(a.includes("" + redirect))
+          const b = "" + window.location.href;
+          if(b.includes("" + redirect))
           {
             menuItem = "<ul class=\"menu_item_selected\">" + label + "</ul>";
           }
