@@ -47,8 +47,6 @@ ConnectConfig = function()
         var response = xhr.responseText;
         var resources = JSON.parse(response);
 
-        document.title = resources.label;
-
         document.getElementById("toolbar_title").innerHTML = resources.author;
       }
 }
@@ -72,6 +70,8 @@ ConnectPagesConfig = function()
 
           var label = a.label;
           var redirect = a.redirect;
+
+          document.title = label;
 
           var menuItem = "";
           const b = "" + window.location.href;
