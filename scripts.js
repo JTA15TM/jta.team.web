@@ -1,13 +1,5 @@
 onMenuClick = function(value)
 {
-    var a = window.location.href;
-    if(a.contains("index.html"))
-    {
-      alert("contain");
-    }
-    else alert("no contain");
-    alert(a);
-
     var redirect = document.getElementsByClassName("menu_item")[value].getAttribute("redirect");
     window.location.href = redirect;
 }
@@ -75,9 +67,16 @@ ConnectPagesConfig = function()
           var label = a.label;
           var redirect = a.redirect;
 
-
-
-          var menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + i + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
+          var menuItem = "";
+          const a = "" + window.location.href;
+          if(a.includes("" + redirect))
+          {
+            menuItem = "<ul class=\"menu_item_selected\">" + label + "</ul>";
+          }
+          else 
+          {
+            menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + i + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
+          }
           output_items += menuItem;
         }
 
