@@ -6,6 +6,12 @@ onMenuClick = function(value)
 
 onload = function()
 {
+  const b = "" + window.location.href;
+  if(!b.includes("index.html"))
+  {
+    window.location.href = "index.html";
+  }
+
     //Body Setup
     document.getElementsByTagName("body")[0].style.opacity = "100%";
 
