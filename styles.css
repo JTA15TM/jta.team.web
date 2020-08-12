@@ -1,11 +1,18 @@
 body
 {
 	opacity: 0%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "ManropeJTA";
 	margin: 0;
 	padding: 0;
 	background-color: #000000;
 }
+
+@font-face {
+	font-family: "ManropeJTA";
+	src: url(/fonts/manrope_extra_light.ttf);
+  }
+
+h1 { font-family: "Kimberley", sans-serif }
 
 #toolbar
 {
