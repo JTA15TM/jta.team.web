@@ -7,7 +7,7 @@ onMenuClick = function(value)
 onload = function()
 {
   const b = "" + window.location.href;
-  if(!b.includes("index.html"))
+  if(!b.slice(-1).includes("l"))
   {
     window.location.href = "index.html";
   }
