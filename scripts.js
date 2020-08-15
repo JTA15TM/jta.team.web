@@ -30,7 +30,7 @@ onload = function()
         content_height = ((width / 2) + (width / 12)) + "px";
     }
     //document.getElementsByClassName("content")[0].style.height = content_height;
-
+   
     ConnectConfig();
     ConnectPagesConfig();
 }
@@ -87,4 +87,13 @@ ConnectPagesConfig = function()
 
         document.getElementById("toolbar_menu_items").innerHTML = output_items;
     }
+}
+
+ConnectAppsConfig = function()
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/pages_config.json', false);
+    xhr.send();
+
+    alert(xhr.responseText);
 }
