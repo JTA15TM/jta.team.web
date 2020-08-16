@@ -202,10 +202,25 @@ footer
 	max-width: 100%;
 }
 
+#app_logo_title
+{
+	display: block;
+	max-width: 100%;
+	font-size: 30px;
+}
+
+#app_logo
+{
+	padding-left: 20px;
+}
+
 #app_logo_description
 {
 	display: block;
 	max-width: 100%;
+	font-size: 15px;
+	color: #cccccc;
+	padding-top: 10px;
 }
 
 #not_found
@@ -220,5 +235,6 @@ footer
 
 td
 {
-   width: 45%;
+	vertical-align: top;
+    width: 45%;
 }

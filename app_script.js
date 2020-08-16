@@ -49,7 +49,16 @@ ConnectAppsConfig = function(id)
 
 ParseInformation = function(item)
 {
+    //Title
+    document.title = item.app_name;
+    document.getElementById("app_logo_title").innerHTML = item.app_name;
 
+    //Description
+    document.getElementById("app_logo_description").innerHTML = item.short_description;
+
+    //Logo
+    var logo_image = "<img id=\"app_logo_preview\" src=\"" + item.logo + "\"/>";
+    document.getElementById("app_logo_container").innerHTML = logo_image;
 }
 
 NotFound = function()
