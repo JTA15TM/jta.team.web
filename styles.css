@@ -7,9 +7,6 @@ body
 	background-color: #000000;
 }
 
-
-h1 { font-family: "Kimberley", sans-serif }
-
 #toolbar
 {
 	display: block;
@@ -145,4 +142,83 @@ footer
 	background: rgb(255,255,255);
 	border-radius: 10px;
     border: 1px solid rgb(255,255,255);
+}
+
+/* App Item */
+#app_logo
+{
+	max-width: 100%;
+}
+
+#app_container
+{
+	display: inline-block;
+	padding: 10px;
+	max-width: 40%;
+}
+
+#app_block
+{
+	display: block;
+	max-width: 100%;
+}
+
+#app_description_block
+{
+	position: relative;
+	background-color: #252525;
+}
+
+.app_button
+{
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	border: 1;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-color: #ffffff;
+	border-width: 1px;
+	background-color: transparent;
+	transition: 0.5s;
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.app_button:hover{
+	cursor: pointer;
+	color: black;
+	background-color: #ffffff;
+}
+
+#app_logo_preview
+{
+	display: block;
+	max-width: 100%;
+}
+
+#app_logo_description
+{
+	display: block;
+	max-width: 100%;
+}
+
+#not_found
+{
+	font-size: 50px;
+	max-width: 100%;
+	max-height: 100%;
+	padding: 15%;
+	text-align: center;
+	color: #ffffff;
+}
+
+td
+{
+   width: 45%;
 }

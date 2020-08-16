@@ -100,10 +100,32 @@ ConnectAppsConfig = function()
     if(xhr.status == 200)
     {
        var response = JSON.parse(xhr.responseText);
+
+       var content = "";
+
        for(var i = 0; i < response.items.length; i++)
        {
           var item = response.items[i];
-          alert(item.app_name);
+          
+          var app_id = item.id;
+          var logo_url = item.logo;
+
+          var item = "<div id=\"app_container\"><div id=\"app_block\"><img id=\"app_logo\" src=\"" + logo_url + "\"/>" 
+          +"<div id=\"app_description_block\">"
+          +"<div class=\"app_button\" onclick=\"onAppClick(" + i + ");\" app_id=\"" + app_id + "\">Перейти"
+          +"</div></div></div></div>";
+
+          content = content + item;
        }
+
+       //Parse Information
+       document.getElementById("apps_container").innerHTML = content;
     }
+}
+
+onAppClick = function(value)
+{
+    var redirect = document.getElementsByClassName("app_button")[value].getAttribute("app_id");
+    var link = "https://jta15tm.github.io/jta.team.web/app.html?app_id=" + redirect;
+    window.location.href = link;
 }
