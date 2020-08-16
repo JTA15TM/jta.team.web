@@ -97,5 +97,13 @@ ConnectAppsConfig = function()
     xhr.open('GET', 'https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/apps.json', false);
     xhr.send();
 
-    alert(xhr.responseText);
+    if(xhr.status == 200)
+    {
+       var response = JSON.parse(xhr.responseText);
+       for(var i = 0; i < response.items.length; i++)
+       {
+          var item = response.items[i];
+          alert(item.app_name);
+       }
+    }
 }
