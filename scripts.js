@@ -80,7 +80,9 @@ ConnectPagesConfig = function()
           }
           else 
           {
-            menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + (i - 1) + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
+            var indx = i - 1;
+            if(indx < 0) indx = 0;
+            menuItem = "<ul class=\"menu_item\" onclick=\"onMenuClick(" + indx + ");\" redirect=\"" + redirect + "\">" + label + "</ul>";
           }
           output_items += menuItem;
         }
@@ -92,7 +94,7 @@ ConnectPagesConfig = function()
 ConnectAppsConfig = function()
 {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/pages_config.json', false);
+    xhr.open('GET', 'https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/apps.json', false);
     xhr.send();
 
     alert(xhr.responseText);
