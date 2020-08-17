@@ -7,7 +7,10 @@
             "short_description":"Скачивай файлы из социальной сети ВКонтакте(VK)",
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/vk_downloader.png",
-            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/vk_downloader_icon.png"
+            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/vk_downloader_icon.png",
+            "version_code":"",
+            "version":"8.0-release",
+            "weight":"6.90 MB"
         },
         {
             "id":1,
@@ -15,7 +18,10 @@
             "short_description":"Просматривайте домашнее задание, оценки и расписание уроков",
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/edu_tatar_client.png",
-            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/edu_tatar_client_icon.png"
+            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/edu_tatar_client_icon.png",
+            "version_code":"",
+            "version":"9.1.2-beta",
+            "weight":"5.27 MB"
         },
         {
             "id":2,
@@ -23,7 +29,10 @@
             "short_description":"Получите местоположение человека, при отправке одного SMS-сообщения на его номер",
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/location_sender.png",
-            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/location_sender_icon.png"
+            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/location_sender_icon.png",
+            "version_code":"",
+            "version":"1.0",
+            "weight":"7.17 MB"
         },
         {
             "id":3,
@@ -31,7 +40,10 @@
             "short_description":"Актуальная информация о короновирусе каждый день",
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/covid19_info.png",
-            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/covid19_info_icon.png"
+            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/covid19_info_icon.png",
+            "version_code":"",
+            "version":"3.5",
+            "weight":"6.40 MB"
         }
     ]
 }
