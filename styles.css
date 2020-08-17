@@ -238,3 +238,32 @@ td
 	vertical-align: top;
     width: 45%;
 }
+
+#back_image_icon
+{
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	filter: invert(0%);
+	transition: 0.3s;
+}
+
+#back_image_icon:hover
+{
+	cursor: pointer;
+	filter: invert(100%);
+}
+
+#back_button
+{
+	display: block;
+	padding: 5px;
+	padding-top: 5px;
+	max-width: 3%;
+	max-height: 3%;
+	background-color: #252525;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 10px;
+	position: relative;
+}

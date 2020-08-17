@@ -66,3 +66,8 @@ NotFound = function()
     document.getElementsByTagName("body")[0].innerHTML = "<div id=\"not_found\">Приложение не найдено!</div>";
 }
     
+onBackPressed = function()
+{
+    var link = "apps.html";
+    window.location.href = link;
+}
