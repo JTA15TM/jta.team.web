@@ -59,6 +59,29 @@ ParseInformation = function(item)
     //Logo
     var logo_image = "<img id=\"app_logo_preview\" src=\"" + item.logo + "\"/>";
     document.getElementById("app_logo_container").innerHTML = logo_image;
+
+    //Weight
+    var weight = "Вес приложения: <pre>" + item.weight + "</pre>";
+    document.getElementById("app_logo_weight").innerHTML = weight;
+
+    //Version Code
+    var version_code = "Версия кода: <pre>" + item.version_code + "</pre>";
+    document.getElementById("app_logo_version_code").innerHTML = version_code;
+
+    //Version 
+    var version = "Версия приложения: <pre>" + item.version + "</pre>";
+    document.getElementById("app_logo_version").innerHTML = version;
+
+    //Icon
+    var icon = "<img id=\"app_icon\" src=\"" + item.icon + "\"/>";
+    document.getElementById("app_icon_block").innerHTML = icon;
+
+    //Download Button
+    var download_button = "<!--Download Button-->"
+    + "<div class=\"app_button\" onclick=\"onDownloadClick(0);\" download_link=\"" + item.download_link + "\">"
+    + "Скачать приложение"
+    + "</div>";
+    document.getElementById("download_app_button").innerHTML = download_button;
 }
 
 NotFound = function()
@@ -70,4 +93,10 @@ onBackPressed = function()
 {
     var link = "apps.html";
     window.location.href = link;
+}
+
+onDownloadClick = function(value)
+{
+    var download_link = document.getElementsByClassName("app_button")[value].getAttribute("download_link");
+    window.location.href = download_link;
 }

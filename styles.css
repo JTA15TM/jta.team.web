@@ -223,6 +223,30 @@ footer
 	padding-top: 10px;
 }
 
+#app_logo_weight
+{
+	display: block;
+	max-width: 100%;
+	font-size: 15px;
+	color: #cccccc;
+}
+
+#app_logo_version_code
+{
+	display: block;
+	max-width: 100%;
+	font-size: 15px;
+	color: #cccccc;
+}
+
+#app_logo_version
+{
+	display: block;
+	max-width: 100%;
+	font-size: 15px;
+	color: #cccccc;
+}
+
 #not_found
 {
 	font-size: 50px;
@@ -266,4 +290,29 @@ td
 	margin-left: 20px;
 	margin-top: 10px;
 	position: relative;
+}
+
+#app_logo_description_container
+{
+	margin-top: 15px;
+}
+
+pre
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#app_icon_block
+{
+	margin-top: 10px;
+	max-width: 10%;
+	max-height: 10%;
+}
+
+#app_icon
+{
+	max-width: 100%;
+	max-height: 100%;
 }
