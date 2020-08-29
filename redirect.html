@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Response</title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body style="color: white;">
+         <script>
+             var xhr = new XMLHttpRequest();
+             xhr.open("GET", "client_config.json", true);
+
+             xhr.onreadystatechange = function() {
+             if (xhr.readyState != 4) return;
+
+                if (xhr.status != 200) 
+                {
+                    var response = "{\"error\":\"network_denided\"}";
+                    document.getElementsByTagName("body")[0].innerText = response;
+                } 
+                else 
+                {
+                    var r = xhr.responseText;
+
+                    var url = window.location.href;
+                    var url_response = url.substring(url.indexOf("?") + 1);
+
+                    var hds = url_response.split("&");
+                    var response = "{";
+                    for(var i = 0; i < hds.length; i++)
+                    {
+                       var out = "\"" + hds[i].replace("=", "\":\"") + "\"";
+                       if(i < hds.length - 1)
+                       {
+                         out += ","
+                       }
+                       response += out;
+                    }
+
+                    var js = JSON.parse(r);
+
+                    //Add Custom Parameters
+                    response += ",\"client_id\":\"" + js.client_id + "\"";
+                    response += ",\"client_secret\":\"" + js.client_secret + "\"";
+                    response += ",\"redirect_uri\":\"" + js.redirect_uri + "\"";
+                    response += ",\"response_type\":\"" + js.response_type + "\"";
+                    response += ",\"grant_type\":\"" + "authorization_code" + "\"";
+
+                    response += "}";
+
+                    document.getElementsByTagName("body")[0].innerText = response;
+                    
+                }
+             }
+             xhr.send(null);
+         </script>
+    </body>
+</html>
