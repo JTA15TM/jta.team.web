@@ -39,11 +39,22 @@
             "app_name":"COVID-19 Info",
             "short_description":"Актуальная информация о короновирусе каждый день",
             "download_link":"",
-            "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/covid19_info.png",
-            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/covid19_info_icon.png",
+            "logo":"/apps/logo/covid19_info.png",
+            "icon":"/apps/icons/covid19_info_icon.png",
             "version_code":"",
             "version":"3.5",
             "weight":"6.40 MB"
+        },
+        {
+            "id":4,
+            "app_name":"",
+            "short_description":"",
+            "download_link":"",
+            "logo":"",
+            "icon":"",
+            "version_code":"",
+            "version":"",
+            "weight":""
         }
     ]
 }
