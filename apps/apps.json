@@ -8,8 +8,8 @@
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/vk_downloader.png",
             "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/vk_downloader_icon.png",
-            "version_code":"",
-            "version":"8.0-release",
+            "version_code":"11",
+            "version":"9.98-release",
             "weight":"6.90 MB"
         },
         {
@@ -19,8 +19,8 @@
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/edu_tatar_client.png",
             "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/edu_tatar_client_icon.png",
-            "version_code":"",
-            "version":"9.1.2-beta",
+            "version_code":"13",
+            "version":"10.9-release",
             "weight":"5.27 MB"
         },
         {
@@ -48,12 +48,23 @@
         {
             "id":4,
             "app_name":"Lyric Founder",
-            "short_description":"",
+            "short_description":"Ищите информацию о треке легко и просто",
             "download_link":"",
             "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/lyric_founder_logo.png",
             "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/lyric_founder_icon.png",
-            "version_code":"",
-            "version":"",
+            "version_code":"2",
+            "version":"2.0",
+            "weight":""
+        },
+        {
+            "id":5,
+            "app_name":"Milana Bot - Бот Милана",
+            "short_description":"Разговорный бот Милана",
+            "download_link":"",
+            "logo":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/logo/milana_bot_logo.png",
+            "icon":"https://raw.githubusercontent.com/JTA15TM/jta.team.web/master/apps/icons/milana_bot_icon.png",
+            "version_code":"3",
+            "version":"3.0",
             "weight":""
         }
     ]
